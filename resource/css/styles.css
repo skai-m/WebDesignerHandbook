@@ -1,0 +1,278 @@
+:root {
+  font-family: "Frank Ruhl Libre", serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  min-width: 350px;
+}
+
+header,
+#title {
+  font-family: "Amatic SC", cursive;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  vertical-align: bottom;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+}
+
+nav {
+  text-align: center;
+  box-shadow: 0 1px 4px gray;
+  width: 100%;
+}
+
+nav ul {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  color: brown;
+}
+
+nav li#active {
+  color: gray;
+}
+
+nav li#active:hover {
+  text-decoration: none;
+}
+
+ul.breadcrumb {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+
+ul.breadcrumb li.location + li.location::before {
+  content: " / ";
+  margin: 0 8px;
+  font-size: smaller;
+}
+
+ul.breadcrumb li#current {
+  color: lightgray;
+}
+
+ul.breadcrumb li.attribute {
+  margin-left: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-radius: 2px;
+}
+
+/*
+ul.breadcrumb li.attribute::after {
+  content: " x";
+  font-size: 0.5em;
+  vertical-align: super;
+}
+*/
+
+aside {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  width: 30%;
+  height: 450px;
+  padding: 20px;
+  min-width: 330px;
+  box-shadow: -1px 1px 4px gray;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+main {
+  display: inline-block;
+  width: 60%;
+  box-shadow: 0 1px 4px gray;
+  height: 490px;
+  overflow: scroll;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+h2 {
+  padding-bottom: 30px;
+}
+
+h2::after {
+  margin: 0 auto;
+  content: "";
+  display: block;
+  height: 10px;
+  width: 30%;
+  border-bottom: 1px solid lightgray;
+}
+
+h3::after {
+  content: "";
+  margin: 0 auto;
+  display: block;
+  height: 10px;
+  width: 50%;
+  border-bottom: 1px solid lightgray;
+}
+
+.container {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+div.color-box,
+div.color-box p {
+  display: inline-block;
+  text-align: center;
+  color: white;
+}
+
+div.color-box {
+  min-width: 300px;
+  max-width: 400px;
+  width: 30%;
+  height: 200px;
+  border: 1px solid black;
+  margin: 1px;
+  box-shadow: 4px 8px black;
+}
+
+p {
+  text-align: justify;
+}
+
+p.intro {
+  padding: 10px 50px;
+}
+
+#butternut {
+  background-color: rgb(247, 184, 112);
+}
+
+#coffee {
+  background-color: rgb(105, 61, 27);
+}
+
+#sage {
+  background-color: rgb(89, 96, 56);
+}
+
+#celosia {
+  background-color: rgb(216, 88, 88);
+}
+
+.font-out {
+  font-size: 40px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  box-shadow: 4px 4px black;
+}
+
+.paragraph-box {
+  margin: 40px 0;
+}
+
+#Lora,
+.Lora-reg,
+.Lora-h4,
+.Lora-para {
+  font-family: "Lora", sans-serif;
+}
+
+.fourh,
+.Lora-reg,
+.Lora-para {
+  font-weight: 400;
+}
+
+.sevenh,
+.Lora-h4 {
+  font-weight: 700;
+}
+
+.ital {
+  font-style: italic;
+}
+
+.Lora-h4 {
+  font-size: 50px;
+}
+
+.Lora-reg {
+  font-size: 30px;
+}
+
+.Lora-para {
+  font-size: 15px;
+}
+
+.paragraph-desc {
+  background-color: gray;
+  padding: 10px;
+  color: white;
+  box-shadow: 4px 4px black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer p#credit {
+  font-size: small;
+}
