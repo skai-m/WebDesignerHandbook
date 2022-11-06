@@ -103,29 +103,34 @@ ul.breadcrumb li.attribute::after {
 }
 */
 
-aside {
-  display: inline-block;
-  color: white;
-  background-color: black;
-  width: 30%;
-  height: 450px;
-  padding: 20px;
-  min-width: 330px;
-  box-shadow: -1px 1px 4px gray;
-}
-
 .content-box {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 30px 0;
+  box-shadow: 0 1px 4px gray;
+}
+
+aside {
+  /*display: inline-block;*/
+  color: white;
+  background-color: black;
+  flex: 1 1 100px;
+  /* width: 30%;
+    height: 450px;
+    */
+  padding: 20px 70px;
+  min-width: 300px;
+  /*box-shadow: -1px 1px 4px gray;*/
 }
 
 main {
-  display: inline-block;
+  /*display: inline-block;
   width: 60%;
-  box-shadow: 0 1px 4px gray;
+  */
+  flex: 2 2 300px;
+  /*box-shadow: 0 1px 4px gray;*/
   height: 490px;
   overflow: scroll;
 }
@@ -184,6 +189,10 @@ div.color-box {
   border: 1px solid black;
   margin: 1px;
   box-shadow: 4px 8px black;
+}
+
+div.color-box p {
+  margin-top: 50px;
 }
 
 p {
@@ -265,7 +274,7 @@ p.intro {
 footer {
   background-color: black;
   color: white;
-  padding: 10px 30px;
+  padding: 20px 70px;
 }
 
 footer a {
