@@ -74,7 +74,7 @@ ul.breadcrumb {
 
 ul.breadcrumb li {
   display: inline;
-  font-size: 0.7em;
+  font-size: 0.9em;
   cursor: pointer;
 }
 
@@ -135,6 +135,11 @@ main {
   overflow: scroll;
 }
 
+.main-caption {
+  padding: 20px 70px;
+  text-align: center;
+}
+
 h2,
 h3 {
   text-align: center;
@@ -160,6 +165,11 @@ h3::after {
   height: 10px;
   width: 50%;
   border-bottom: 1px solid lightgray;
+}
+
+h4 {
+  padding: 0 50px;
+  margin-top: 40px;
 }
 
 .container {
